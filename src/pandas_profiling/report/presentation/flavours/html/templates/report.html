@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Profile report generated with the `pandas-profiling` Python package">
+    <meta name="author" content="Simon Brugman and the open source community.">
+    <meta name="generator" content="Pandas Profiling v{{ version }}" />
+    <meta name="url" content="https://github.com/pandas-profiling/pandas-profiling">
+    <meta name="date" content="{{ date }}">
+
+    <title>{{ title }}</title>
+
+    {% include 'wrapper/style.html' %}
+</head>
+
+<body>
+    {% if nav == True %}
+        {% include 'wrapper/navigation.html' %}
+    {% endif %}
+    <div class="content">
+    {{ body.render() }}
+    </div>
+    {% include 'wrapper/footer.html' %}
+    {% include 'wrapper/javascript.html' %}
+    <style>
+        body{
+            background-color: #121722 !important;
+            color: #999;
+        }
+        .btn-default{
+            border: none !important;
+            color: #FFF !important;
+            background: linear-gradient(45deg,#82CBFF 0%,#9D51D9 50%,#FF3F64 100%) !important;
+        }
+        .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+            color: #fff;
+            cursor: default;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            background: linear-gradient(45deg,#82CBFF 0%,#9D51D9 50%,#FF3F64 100%) !important;
+            border-bottom-color: transparent;
+        }
+        .navbar-default{
+            background-color: #121722 !important;
+            border-color: #121722 !important;
+            background-image: -webkit-linear-gradient(top,#121722 0,#121722 100%) !important;
+            background-image: -o-linear-gradient(top,#121722 0,#121722 100%) !important;
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#121722),to(#121722)) !important;
+            background-image: linear-gradient(to bottom,#121722,#121722 100%) !important;
+        }
+        a {
+            color: #82CBFF;
+            text-decoration: none;
+        }
+        .navbar-default .navbar-nav>li>a {
+            color: #9D51D9;
+        }
+        .navbar-default .navbar-brand {
+            color: #FFF;
+        }   
+        .stats th, .stats td {
+        color: #999;
+        border: 0;
+        }
+    </style>
+</body>
+</html>
